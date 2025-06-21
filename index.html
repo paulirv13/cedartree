@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cedar Tree Cattery</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet" />
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #ffffff;
+            color: #333333;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #f5f5f5;
+            color: #b23a48;
+            padding: 1rem 2rem;
+            border-bottom: 1px solid #e0e0e0;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 2rem;
+            margin: 0.5rem 0;
+        }
+        .contact-info {
+            font-size: 0.95rem;
+            color: #333333;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #ffffff;
+            border-bottom: 2px solid #eeeeee;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            flex-wrap: wrap;
+        }
+        nav a {
+            color: #333333;
+            text-decoration: none;
+            margin: 1rem;
+            font-weight: 500;
+        }
+        nav a:hover {
+            color: #b23a48;
+        }
+        .hero {
+            background: url('images/hero.png') center/cover no-repeat;
+            height: 350px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #ffffff;
+            font-size: 2.5rem;
+            text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+        }
+        .section {
+            padding: 3rem 2rem;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        .section h2 {
+            color: #b23a48;
+            border-bottom: 2px solid #eeeeee;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 1rem;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .cta-button {
+            background-color: #b23a48;
+            color: #ffffff;
+            padding: 1rem 2rem;
+            text-decoration: none;
+            border-radius: 4px;
+            display: inline-block;
+            margin-top: 1rem;
+            transition: background-color 0.3s ease;
+        }
+        .cta-button:hover {
+            background-color: #972e3b;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #fafafa;
+            color: #777777;
+            border-top: 1px solid #e0e0e0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Cedar Tree Cattery</h1>
+        <div class="contact-info">
+            📞 <a href="tel:07587784435">07587 784435</a> &nbsp; | &nbsp; 
+            <a href="https://www.facebook.com/share/199oh7V5X7/?mibextid=wwXIfr" target="_blank">Facebook</a>
+        </div>
+    </header>
+
+    <nav>
+        <a href="#welcome">Home</a>
+        <a href="#about">About</a>
+        <a href="#accommodation">Accommodation</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#contact">Contact</a>
+        <a href="#contact">Find Us</a>
+    </nav>
+
+    <div class="hero">
+    </div>
+
+    <div id="welcome" class="section">
+        <h2>Welcome</h2>
+        <p>
+            A cozy, safe haven for your feline friends — where your cat feels right at home.<br>
+            Nestled in peaceful countryside surroundings, Cedar Tree Cattery is lovingly run by Gary & Joanne Wall. We provide a calm and caring environment where your cats can relax, play, and enjoy their own little holiday while you're away.
+        </p>
+        <p>
+            Whether you’re heading off for a weekend break or a longer trip, we’re here to give your cat the best care possible — with comfy accommodation, plenty of attention, and lots of little touches to make them feel happy and settled.
+        </p>
+    </div>
+
+    <div id="about" class="section">
+        <h2>About Us</h2>
+        <p>
+            We’re Gary & Joanne Wall — lifelong animal lovers and proud owners of Cedar Tree Cattery.<br>
+            Our aim is simple: to offer a safe, friendly, and homely place for your cats to stay, so you can enjoy peace of mind while you're away.<br>
+            We’re always happy to answer any questions — just get in touch for a chat or to arrange a visit.
+        </p>
+    </div>
+
+    <div id="accommodation" class="section">
+        <h2>Accommodation</h2>
+        <p>
+            Our purpose-built cattery offers spacious, clean pens — each with cosy bedding, climbing frames, toys, and quiet corners for snoozing.<br>
+            We believe every cat deserves individual attention and comfort. The pens are designed so your furry friend can stretch, play, or simply relax in a peaceful space.<br>
+            Everything is kept clean and fresh, so you can be sure your cat will be well looked after.
+        </p>
+
+        <div class="gallery">
+            <a href="images/gallery1.jpg" data-lightbox="gallery" data-title="Cattery Interior 1"><img src="images/gallery1.jpg" alt="Cattery Interior 1" style="aspect-ratio: 1/1; object-fit: cover;"></a>
+<a href="images/gallery2.jpg" data-lightbox="gallery" data-title="Cattery Interior 2"><img src="images/gallery2.jpg" alt="Cattery Interior 2" style="aspect-ratio: 1/1; object-fit: cover;"></a>
+<a href="images/gallery3.jpg" data-lightbox="gallery" data-title="Cattery Interior 3"><img src="images/gallery3.jpg" alt="Cattery Interior 3" style="aspect-ratio: 1/1; object-fit: cover;"></a>
+<a href="images/gallery4.jpg" data-lightbox="gallery" data-title="Cattery Interior 4"><img src="images/gallery4.jpg" alt="Cattery Interior 4" style="aspect-ratio: 1/1; object-fit: cover;"></a>
+<a href="images/gallery5.jpg" data-lightbox="gallery" data-title="Cattery Interior 5"><img src="images/gallery5.jpg" alt="Cattery Interior 5" style="aspect-ratio: 1/1; object-fit: cover;"></a>
+<a href="images/gallery6.jpg" data-lightbox="gallery" data-title="Cattery Interior 6"><img src="images/gallery6.jpg" alt="Cattery Interior 6" style="aspect-ratio: 1/1; object-fit: cover;"></a>
+<a href="images/gallery7.jpg" data-lightbox="gallery" data-title="Cattery Interior 7"><img src="images/gallery7.jpg" alt="Cattery Interior 7" style="aspect-ratio: 1/1; object-fit: cover;"></a>
+        </div>
+    </div>
+
+    <div id="reviews" class="section">
+        <h2>Reviews</h2>
+        <p>Here's what our happy customers have to say:</p>
+        <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fjane.harris.397%2Fposts%2Fpfbid0czNSYdZf9fuMGRWr8691tUJaLEVKbvdR7JCS5JacbyMe61gu1DBnF5u1m8PK9iTDl&show_text=true&width=500" width="500" height="228" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+    </div>
+
+    <div id="contact" class="section">
+        <h2>Contact & Bookings</h2>
+        <p>
+            <strong>Address:</strong><br>
+            Cedar Tree Cattery<br>
+            31 Lingyclose Road<br>
+            Dalston
+        </p>
+        <p>
+            <strong>Phone:</strong> <a href="tel:07587784435">07587 784435</a><br>
+            <strong>Facebook:</strong> <a href="https://www.facebook.com/share/199oh7V5X7/?mibextid=wwXIfr" target="_blank">Cedar Tree Cattery on Facebook</a>
+        </p>
+        <p>
+            We recommend booking in advance — especially during busy holiday times. Drop-off and collection times are flexible and will be arranged with you when you book. We aim to respond to all messages as quickly as possible!
+        </p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d575.059831294963!2d-2.9749414185740894!3d54.86082993318115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487d19166f781433%3A0x7798fc652243c0f4!2s31%20Lingyclose%20Rd%2C%20Dalston%2C%20Carlisle%20CA5%207LB!5e1!3m2!1sen!2suk!4v1750539269662!5m2!1sen!2suk" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <a href="tel:07587784435" class="cta-button">Call to Book</a>
+    </div>
+
+    <footer>
+        &copy; 2025 Cedar Tree Cattery. All rights reserved.
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox-plus-jquery.min.js"></script>
+</body>
+</html>
