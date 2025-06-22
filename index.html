@@ -127,7 +127,7 @@
     </style>
 </head>
 <body>
-    <header style="background-color: #b00c15; color: #f6aa48; border-bottom: 1px solid #e0e0e0; padding: 1rem 2rem; position: relative;">
+    <header id="site-header" style="background-color: #b00c15; color: #f6aa48; border-bottom: 1px solid #e0e0e0; padding: 1rem 2rem; position: relative;">
     
     <img id="logo" src="images/logo.png" alt="Cedar Tree Cattery Logo" style="position: absolute; top: 1rem; left: 1rem; height: 120px; width: auto;">
     
@@ -147,9 +147,13 @@
 <style>
 @media (max-width: 768px) {
     #logo {
-        position: static;
+        position: static !important;
         display: block;
         margin: 0 auto 1rem auto;
+    }
+    #site-header {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
     }
 }
 @media (max-width: 400px) {
@@ -158,6 +162,7 @@
     }
 }
 </style>
+
 
 
 
