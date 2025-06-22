@@ -20,8 +20,8 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            background-color: #f5f5f5;
-            color: #b23a48;
+            color: #f6aa48;
+            background-color: #b00c15;
             padding: 1rem 2rem;
             border-bottom: 1px solid #e0e0e0;
             text-align: center;
@@ -32,8 +32,17 @@
         }
         .contact-info {
             font-size: 0.95rem;
-            color: #333333;
+            color: #f5f5f5;
         }
+        .contact-info a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+        
         nav {
             display: flex;
             justify-content: center;
@@ -51,7 +60,7 @@
             font-weight: 500;
         }
         nav a:hover {
-            color: #b23a48;
+            color: #b00c15;
         }
         .hero {
             position: relative;
@@ -74,7 +83,7 @@
             margin: 0 auto;
         }
         .section h2 {
-            color: #b23a48;
+            color: #b00c15;
             border-bottom: 2px solid #eeeeee;
             padding-bottom: 0.5rem;
             margin-bottom: 1.5rem;
@@ -91,7 +100,7 @@
             box-shadow: 0 4px 8px rgba(0,0,0,0.1);
         }
         .cta-button {
-            background-color: #b23a48;
+            background-color: #b00c15;
             color: #ffffff;
             padding: 1rem 2rem;
             text-decoration: none;
@@ -119,16 +128,22 @@
 </head>
 <body>
     <header>
-        <h1>Cedar Tree Cattery</h1>
+        <div style="display: flex; align-items: center; gap: 1rem; flex-wrap: wrap; justify-content: center;">
+        <img src="images/logo.png" alt="Cedar Tree Cattery Logo" style="height: 120px; width: auto;">
+        <div>
+            <h1>Cedar Tree Cattery</h1>
+            <div class="contact-info">
+                <p>
+                    <strong>31 Lingyclose Road, Dalston, Carlisle, CA5 7LB</strong>
+                </p>
+            </div>
         <div class="contact-info">
-            <p>
-                <strong>31 Lingyclose Road, Dalston, Carlisle, CA5 7LB</strong>
-            </p>
+            <span style="margin-right: 1rem;">📞 <a href="tel:07587784435">07587 784435</a></span>
+            <span style="margin-right: 1rem;">📧 <a href="mailto:cedartreecattery31@outlook.com">cedartreecattery31@outlook.com</a></span>
+            <span><a href="https://www.facebook.com/share/199oh7V5X7/?mibextid=wwXIfr" target="_blank">Facebook</a></span>
         </div>
-        <div class="contact-info">
-            📞 <a href="tel:07587784435">07587 784435</a> &nbsp; | &nbsp; 
-            <a href="https://www.facebook.com/share/199oh7V5X7/?mibextid=wwXIfr" target="_blank">Facebook</a>
         </div>
+
         
     </header>
 
@@ -144,25 +159,32 @@
     <div class="hero">
     </div>
 
-    <div id="welcome" class="section">
-        <h2>Welcome</h2>
-        <p>
-            A cozy, safe haven for your feline friends — where your cat feels right at home.<br>
-            Nestled in peaceful countryside surroundings, Cedar Tree Cattery is lovingly run by Gary & Joanne Wall. We provide a calm and caring environment where your cats can relax, play, and enjoy their own little holiday while you're away.
-        </p>
-        <p>
-            Whether you’re heading off for a weekend break or a longer trip, we’re here to give your cat the best care possible — with comfy accommodation, plenty of attention, and lots of little touches to make them feel happy and settled.
-        </p>
-    </div>
-
     <div id="about" class="section">
-        <h2>About Us</h2>
-        <p>
-            We’re Gary & Joanne — lifelong animal lovers and proud owners of Cedar Tree Cattery.<br>
-            Our aim is simple: to offer a safe, friendly, and homely place for your cats to stay, so you can enjoy peace of mind while you're away.<br>
-            We’re always happy to answer any questions — just get in touch for a chat or to arrange a visit.
-        </p>
-    </div>
+    <h2>About Us</h2>
+    <p>
+        Welcome to Cedar Tree Cattery — a small, family-run cattery attached to our home in the countryside. We’re Gary and Joanne, a husband and wife team, and we take great pride in providing a loving, professional environment where your cats will feel safe, happy and well cared for during their stay.
+    </p>
+    <p>
+        This site has a long history of caring for cats — it was previously run as a cattery by the former owners, and before that, the house was gifted to a cat protection charity. We feel very lucky to continue that tradition of love for our feline friends.
+    </p>
+    <p>
+        We share our home with four of our own much-loved cats:<br>
+        &rarr; <strong>Romeo</strong>, our wise old gentleman who we rescued as a kitten<br>
+        &rarr; <strong>Luna</strong>, a sweet Siamese/Ragdoll cross who adores company<br>
+        &rarr; <strong>Bertie & Lilly</strong>, our playful Ragdoll kittens who keep us entertained every day!
+    </p>
+    <p>
+        With a 35-year background in healthcare, Joanne brings a wealth of experience in ensuring the well-being and safety of all our guests, with plenty of individual attention for every cat. Gary, a passionate gardener and animal lover, keeps our surroundings peaceful and natural — not to mention looking after our happy flock of 50 rescued chickens and 7 ducks!
+    </p>
+    <p>
+        We’re both really looking forward to this next adventure together at Cedar Tree Cattery.
+    </p>
+    <p>
+        If you have any questions or would like to arrange a visit, please just give us a call.<br>
+        <em>Visits to view the cattery are by appointment only (for insurance reasons), so please contact us in advance — we’d love to show you around!</em>
+    </p>
+</div>
+
 
     <div id="accommodation" class="section">
         <h2>Accommodation</h2>
@@ -199,6 +221,7 @@
         </p>
         <p>
             <strong>Phone:</strong> <a href="tel:07587784435">07587 784435</a><br>
+            <strong>Email:</strong> <a href="mailto:cedartreecattery31@outlook.com">cedartreecattery31@outlook.com</a><br>
             <strong>Facebook:</strong> <a href="https://www.facebook.com/share/199oh7V5X7/?mibextid=wwXIfr" target="_blank">Cedar Tree Cattery on Facebook</a>
         </p>
         <p>
