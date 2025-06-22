@@ -69,12 +69,24 @@
             height: 350px;
             background: url('images/hero.png') center/cover no-repeat;
         }
+        .logo {
+            position: absolute;
+        }
 
         /* On mobile screens */
         @media (max-width: 768px) {
             .hero {
                 background: url('images/hero-mobile.png') center/cover no-repeat;
                 height: 250px; /* smaller height on mobile if you like */
+            }
+            .logo {
+                position: static;
+                display: block;
+                margin: 0 auto 1rem auto;
+                text-align: center;
+            }
+            .header-address {
+                font-size: 0.9rem;
             }
         }
         .section {
@@ -123,12 +135,11 @@
             max-width: 100%;
             display: block;
         }
-
     </style>
 </head>
 <body><header style="background-color: #b00c15; color: #f6aa48; border-bottom: 1px solid #e0e0e0; padding: 1rem 2rem; position: relative;">
 
-    <div style="position: absolute; top: 1rem; left: 1rem;">
+    <div class="logo" style="top: 1rem; left: 1rem;">
         <img src="images/logo.png" alt="Cedar Tree Cattery Logo" style="height: 120px; width: auto;">
     </div>
 
@@ -146,19 +157,6 @@
 
 </header>
 
-<style>
-@media (max-width: 768px) {
-    header > div:first-child {
-        position: static;
-        display: block;
-        margin: 0 auto 1rem auto;
-        text-align: center;
-    }
-    .header-address {
-        font-size: 0.9rem;
-    }
-}
-</style>
 
 
 
@@ -213,14 +211,16 @@
         </p>
 
         <div class="gallery">
-            <a href="images/gallery1.jpg" data-lightbox="gallery" data-title="Cattery Interior 1"><img src="images/gallery1.jpg" alt="Cattery Interior 1" style="aspect-ratio: 1/1; object-fit: cover;"></a>
-<a href="images/gallery2.jpg" data-lightbox="gallery" data-title="Cattery Interior 2"><img src="images/gallery2.jpg" alt="Cattery Interior 2" style="aspect-ratio: 1/1; object-fit: cover;"></a>
-<a href="images/gallery3.jpg" data-lightbox="gallery" data-title="Cattery Interior 3"><img src="images/gallery3.jpg" alt="Cattery Interior 3" style="aspect-ratio: 1/1; object-fit: cover;"></a>
-<a href="images/gallery4.jpg" data-lightbox="gallery" data-title="Cattery Interior 4"><img src="images/gallery4.jpg" alt="Cattery Interior 4" style="aspect-ratio: 1/1; object-fit: cover;"></a>
-<a href="images/gallery5.jpg" data-lightbox="gallery" data-title="Cattery Interior 5"><img src="images/gallery5.jpg" alt="Cattery Interior 5" style="aspect-ratio: 1/1; object-fit: cover;"></a>
-<a href="images/gallery6.jpg" data-lightbox="gallery" data-title="Cattery Interior 6"><img src="images/gallery6.jpg" alt="Cattery Interior 6" style="aspect-ratio: 1/1; object-fit: cover;"></a>
-<a href="images/gallery7.jpg" data-lightbox="gallery" data-title="Cattery Interior 7"><img src="images/gallery7.jpg" alt="Cattery Interior 7" style="aspect-ratio: 1/1; object-fit: cover;"></a>
-        </div>
+            <a href="images/gallery1.png" data-lightbox="gallery" data-title="Cattery Interior 1"><img src="images/gallery1.png" alt="Cattery Interior 1" style="aspect-ratio: 1/1; object-fit: cover;"></a>
+            <a href="images/gallery2.png" data-lightbox="gallery" data-title="Cattery Interior 2"><img src="images/gallery2.png" alt="Cattery Interior 2" style="aspect-ratio: 1/1; object-fit: cover;"></a>
+            <a href="images/gallery3.png" data-lightbox="gallery" data-title="Cattery Interior 3"><img src="images/gallery3.png" alt="Cattery Interior 3" style="aspect-ratio: 1/1; object-fit: cover;"></a>
+            <a href="images/gallery4.png" data-lightbox="gallery" data-title="Cattery Interior 4"><img src="images/gallery4.png" alt="Cattery Interior 4" style="aspect-ratio: 1/1; object-fit: cover;"></a>
+            <a href="images/gallery5.png" data-lightbox="gallery" data-title="Cattery Interior 5"><img src="images/gallery5.png" alt="Cattery Interior 5" style="aspect-ratio: 1/1; object-fit: cover;"></a>
+            <a href="images/gallery6.png" data-lightbox="gallery" data-title="Cattery Interior 6"><img src="images/gallery6.png" alt="Cattery Interior 6" style="aspect-ratio: 1/1; object-fit: cover;"></a>
+            <a href="images/gallery7.png" data-lightbox="gallery" data-title="Cattery Interior 7"><img src="images/gallery7.png" alt="Cattery Interior 7" style="aspect-ratio: 1/1; object-fit: cover;"></a>
+            <a href="images/gallery8.png" data-lightbox="gallery" data-title="Cattery Interior 8"><img src="images/gallery8.png" alt="Cattery Interior 8" style="aspect-ratio: 1/1; object-fit: cover;"></a>
+            <a href="images/gallery9.png" data-lightbox="gallery" data-title="Cattery Interior 9"><img src="images/gallery9.png" alt="Cattery Interior 9" style="aspect-ratio: 1/1; object-fit: cover;"></a>
+    </div>
     </div>
 
     <div id="reviews" class="section">
@@ -235,7 +235,9 @@
             <strong>Address:</strong><br>
             Cedar Tree Cattery<br>
             31 Lingyclose Road<br>
-            Dalston
+            Dalston<br>
+            Cumbria<br>
+            CA5 7LB
         </p>
         <p>
             <strong>Phone:</strong> <a href="tel:07587784435">07587 784435</a><br>
