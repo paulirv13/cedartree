@@ -135,9 +135,16 @@
             max-width: 100%;
             display: block;
         }
+        /* Style wrapper to ensure Elfsight stays centered and looks clean */
+        .reviews-container {
+            width: 100%;
+            margin: 1.5rem auto 0 auto;
+        }
     </style>
 </head>
-<body><header style="background-color: #b00c15; color: #f6aa48; border-bottom: 1px solid #e0e0e0; padding: 1rem 2rem; position: relative;">
+<body>
+
+<header style="background-color: #b00c15; color: #f6aa48; border-bottom: 1px solid #e0e0e0; padding: 1rem 2rem; position: relative;">
 
     <div class="logo" style="top: 1rem; left: 1rem;">
         <img src="images/logo.png" alt="Cedar Tree Cattery Logo" style="height: 120px; width: auto;">
@@ -157,12 +164,6 @@
 
 </header>
 
-
-
-
-
-
-
     <nav>
         <a href="#welcome">Home</a>
         <a href="#about">About</a>
@@ -172,7 +173,7 @@
         <a href="#contact">Find Us</a>
     </nav>
 
-    <div class="hero">
+    <div id="welcome" class="hero">
     </div>
 
     <div id="about" class="section">
@@ -185,9 +186,9 @@
     </p>
     <p>
         We share our home with four of our own much-loved cats:<br>
-        &#128062; <strong>Romeo</strong>, our wise old gentleman who we rescued as a kitten<br>
-        &#128062; <strong>Luna</strong>, a sweet Siamese/Ragdoll cross who adores company<br>
-        &#128062; <strong>Bertie & Lilly</strong>, our playful Ragdoll kittens who keep us entertained every day!
+        🐾 <strong>Romeo</strong>, our wise old gentleman who we rescued as a kitten<br>
+        🐾 <strong>Luna</strong>, a sweet Siamese/Ragdoll cross who adores company<br>
+        🐾 <strong>Bertie & Lilly</strong>, our playful Ragdoll kittens who keep us reunited every day!
     </p>
     <p>
         With a 35-year background in healthcare, Joanne brings a wealth of experience in ensuring the well-being and safety of all our guests, with plenty of individual attention for every cat. Gary, a passionate gardener and animal lover, keeps our surroundings peaceful and natural — not to mention looking after our happy flock of 50 rescued chickens and 7 ducks!
@@ -227,7 +228,11 @@
     <div id="reviews" class="section">
         <h2>Reviews</h2>
         <p>Here's what our happy customers have to say:</p>
-        <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fjane.harris.397%2Fposts%2Fpfbid0czNSYdZf9fuMGRWr8691tUJaLEVKbvdR7JCS5JacbyMe61gu1DBnF5u1m8PK9iTDl&show_text=true&width=500" width="500" height="228" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+        
+        <div class="reviews-container">
+            <script src="https://elfsightcdn.com/platform.js" async></script>
+            <div class="elfsight-app-771b3731-0f71-41ba-a7b8-284897385a3a" data-elfsight-app-lazy></div>
+        </div>
     </div>
 
     <div id="contact" class="section">
@@ -255,7 +260,7 @@
     </div>
 
     <footer>
-        &copy; 2025 Cedar Tree Cattery. All rights reserved.
+        © 2026 Cedar Tree Cattery. All rights reserved.
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox-plus-jquery.min.js"></script>
